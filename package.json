@@ -1,0 +1,28 @@
+{
+  "name": "preguntar",
+  "version": "1.0.0",
+  "description": "Juego de pregunt.AR",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gazzimon/Preguntar.git"
+  },
+  "keywords": [
+    "WEBAR",
+    "Aumented",
+    "reality"
+  ],
+  "author": "Azzimonti Renzo Gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gazzimon/Preguntar/issues"
+  },
+  "homepage": "https://github.com/gazzimon/Preguntar#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
