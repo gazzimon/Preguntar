@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pregunt.AR</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <!-- IMPORTAR EL STYLE.CSS -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- IMPORTAR EL JAVASCRIPT-->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden;">
+    <div>
+      <h1>
+        PREGUNT.AR
+      </h1>
+      <div class="container">
+        <div>
+          <h2 id="category"></h2>
+          <h2 id="difficulty"></h2>
+          <h2 id="question"></h2>
+        </div>
+        <button id="answer1" class="btn"></button>
+        <button id="answer2" class="btn"></button>
+        <button id="answer3" class="btn"></button>
+        <button id="answer4" class="btn"></button>
+      </div>
+    </div>
+    <!--DEFINE VARIABLES DEL AFRAME MARKER HERO-->
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          gltf-model="https://cdn.glitch.com/1fd99201-db20-44ac-ace4-7a5f1994cd51%2FBuggy.glb?v=1605103806062"
+          rotation="270 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
