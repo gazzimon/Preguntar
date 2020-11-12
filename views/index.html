@@ -11,16 +11,13 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
     <!-- IMPORTAR EL STYLE.CSS -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="public/style.css" />
 
     <!-- IMPORTAR EL JAVASCRIPT-->
-    <script src="/script.js" defer></script>
+    <script src="public/script.js" defer></script>
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
-      <h1>
-        PREGUNT.AR
-      </h1>
       <div class="container">
         <div>
           <h2 id="category"></h2>
@@ -38,9 +35,9 @@
       <a-marker preset="hiro">
         <a-entity
           position="0 0 0"
-          scale="1 1 1"
-          gltf-model="./assets/Buggy.glb"
-          rotation="270 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+          rotation="0 0 0"
         ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
