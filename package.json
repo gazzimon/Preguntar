@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js",    
     "start": "node server.js"
   },
   "repository": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/gazzimon/Preguntar#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
   }
 }
